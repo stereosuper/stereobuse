@@ -1,0 +1,28 @@
+{
+  "name": "stereobuse",
+  "version": "1.0.0",
+  "description": "Un template de base pour les nuls.",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "scripts": {
+    "styles": "node-sass --watch scss/main.scss css/main.css",
+    "watch": "browser-sync start --server --files \"**/*.html, **/*.js, **/*.css\"",
+    "start": "npm-run-all --parallel watch styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stereosuper/stereobuse.git"
+  },
+  "author": "Stéréosuper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stereosuper/stereobuse/issues"
+  },
+  "homepage": "https://github.com/stereosuper/stereobuse#readme"
+}
